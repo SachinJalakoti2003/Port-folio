@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Jalakoti | Data Science & AI/ML Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='img/sachin.jpg') }}">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">Sachin Jalakoti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero" data-sr>
+        <div class="container">
+            <img src="{{ url_for('static', filename='img/sachin.jpg') }}" alt="Sachin Jalakoti" class="profile-img mb-3">
+            <h1>Sachin Jalakoti</h1>
+            <h2>🌟 Aspiring Data Science & AI/ML Engineer</h2>
+            <p class="lead">Turning data into decisions with ML, SQL, and Python 💡</p>
+            <div class="mt-4">
+                <a href="{{ url_for('view_resume') }}" class="btn btn-primary btn-custom" target="_blank">View Resume</a>
+                <a href="https://github.com/SachinJalakoti2003" class="btn btn-outline-dark btn-custom" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sachin-jalakoti-443560260/" class="btn btn-outline-primary btn-custom" target="_blank">LinkedIn</a>
+                <a href="#contact" class="btn btn-success btn-custom">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="py-5" id="about" data-sr>
+        <div class="container">
+            <h2 class="section-title">👨‍💻 About Me</h2>
+            <p class="fs-5">I am currently pursuing B.Tech in Computer Science & Engineering. I'm a passionate learner in Data Science and AI/ML, with hands-on experience in machine learning, deep learning, and data analysis. I love turning grayscale problems into colorful solutions 🎨, and I'm always eager to work on real-world projects.</p>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-white rounded shadow-sm h-100">
+                        <span class="fw-bold">🎯 Short-term Goal:</span> Work as a Data Analyst or ML Intern
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-white rounded shadow-sm h-100">
+                        <span class="fw-bold">🚀 Long-term Goal:</span> Become an AI/ML Engineer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-5" id="skills" data-sr>
+        <div class="container">
+            <h2 class="section-title">🧠 Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">👨‍💻 Programming Languages</h5>
+                            <p class="card-text">Python 🐍, SQL 🗃️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">📊 Data Analysis</h5>
+                            <p class="card-text">Pandas 🐼, NumPy, Matplotlib 📈, Power BI 📊, Excel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🤖 Machine Learning</h5>
+                            <p class="card-text">Scikit-learn, PyTorch 🔥, OpenCV, NLP, Computer Vision</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🧪 Tools & Platforms</h5>
+                            <p class="card-text">GitHub 🐙, Google Colab, Jupyter, GitHub Codespaces</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-5" id="projects" data-sr>
+        <div class="container">
+            <h2 class="section-title">📁 Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🎨 Image Colorization using PyTorch</h5>
+                            <p class="card-text">Converts grayscale images to color with deep learning.<br>Includes default and user-defined colorization.<br>GUI interface + API ready.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="https://finalproject-xkkx.onrender.com" class="btn btn-success btn-sm" target="_blank">View Project</a>
+                                <a href="https://github.com/SachinJalakoti2003/Grayscale_Colorization" class="btn btn-outline-primary btn-sm" target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🩺 FitBot – Health Assistant Chatbot</h5>
+                            <p class="card-text">Predicts BMI and recommends exercises/diet.<br>Built using Flask + Gemini API.<br>Healthcare-focused chatbot.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="https://chatbot-fitbot.onrender.com" class="btn btn-success btn-sm" target="_blank">View Project</a>
+                                <a href="https://github.com/SachinJalakoti2003/Chatbot-Fitbot-" class="btn btn-outline-primary btn-sm" target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🎓 Student Performance & Feedback Tracker (SQL)</h5>
+                            <p class="card-text">Uses only SQL for analyzing marks, feedback, and attendance.<br>Track performance across subjects and departments.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI2NTk3MDEtM2E4MS00MjYzLTg4ZWEtNWM0M2U4NGRlYjFhIiwidCI6IjRlYWM0YjA3LTNkYmUtNDEwMy1hMDkyLWI0MjgzMzlhZTllNyJ9" class="btn btn-success btn-sm" target="_blank">View Project</a>
+                                <a href="https://github.com/SachinJalakoti2003/SQL_Project-Student-Performance-Feedback-Tracker-" class="btn btn-outline-primary btn-sm" target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🌍 Western Country Sales Tracker</h5>
+                            <p class="card-text">Analyzes and visualizes sales data of western countries.<br>Built using SQL, Power BI, Excel, and Python.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="https://app.powerbi.com/groups/me/reports/674f93da-fcef-4dac-9e3f-f59577c42d24/ReportSection8c3b2170d62ee0349427?ctid=4eac4b07-3dbe-4103-a092-b428339ae9e7&pbi_source=shareVisual&visual=aa315e968c93c3e0e024&height=292.91&width=410.58&bookmarkGuid=de013cbb-408a-4254-8933-e9f02c75d92" class="btn btn-success btn-sm" target="_blank">View Project</a>
+                                <a href="https://github.com/SachinJalakoti2003/Western-Sales-Data-Tracker" class="btn btn-outline-primary btn-sm" target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-5" id="certifications" data-sr>
+        <div class="container">
+            <h2 class="section-title">🎓 Certifications</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            
+                            <h5 class="card-title mt-2">✅ GeekforGeeks: Data Science and Machine Learning</h5>
+                            <p class="card-text">June-2024</p>
+                            <a href="https://drive.google.com/file/d/1C-_rwrUJ7UXFjg9DA6JIs7PITUPuhwpf/view?usp=sharing" class="btn btn-outline-success btn-sm" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            
+                            <h5 class="card-title mt-2">✅ Testbook: Business Analyst</h5>
+                            <p class="card-text">May-2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-5" id="education" data-sr>
+        <div class="container">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">B.Tech – Computer Science and Engineering</h5>
+                            <p class="card-text">MIT College of Railway Engineering and Research, Barshi<br>Year: 2022–2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Diploma – Computer Science and Engineering</h5>
+                            <p class="card-text">Swami Vivekanand Institute of Technology, Solapur<br>Year: 2019–2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section class="py-5" id="contact" data-sr>
+        <div class="container">
+            <h2 class="section-title">📬 Contact Me</h2>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <form method="POST" action="{{ url_for('send_message') }}">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-white rounded shadow-sm h-100">
+                        <p><strong>📧 Email:</strong> sachinjalkote45@gmail.com</p>
+                        <p><strong>📞 Phone:</strong> 7499924011</p>
+                        <p><strong>🌐 LinkedIn:</strong> <a href="https://www.linkedin.com/in/sachin-jalakoti-443560260/" target="_blank">linkedin.com/in/sachin-jalakoti-443560260/</a></p>
+                        <p><strong>🐱 GitHub:</strong> <a href="https://github.com/SachinJalakoti2003" target="_blank">github.com/SachinJalakoti2003</a></p>
+                        <p><strong>📍 Location:</strong> Solapur, Maharashtra, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            &copy; {{ 2025 }} Sachin Jalakoti. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

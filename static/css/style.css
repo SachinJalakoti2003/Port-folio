@@ -1,0 +1,129 @@
+/* Custom styles for Sachin's Portfolio */
+
+body {
+    background-color: #f8f9fa;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.nav-link.active {
+    color: #007bff !important;
+    font-weight: 600;
+}
+
+.hero-section {
+    background: linear-gradient(120deg, #e0f7fa 0%, #e3f2fd 100%);
+    padding: 80px 0 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section img.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.hero-section h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.btn-custom {
+    margin: 0 8px 8px 0;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-custom:hover {
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,123,255,0.15);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 24px;
+}
+
+.card {
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,123,255,0.10);
+}
+
+.certificate-img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+}
+
+footer {
+    background: #e3f2fd;
+    color: #222;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Scroll reveal animation */
+[data-sr] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(.77,0,.18,1), transform 0.7s cubic-bezier(.77,0,.18,1);
+}
+[data-sr].sr-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Contact form */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.10);
+}
+
+.btn-send {
+    background: #28a745;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-send:hover {
+    background: #218838;
+    box-shadow: 0 2px 12px rgba(40,167,69,0.15);
+} 
